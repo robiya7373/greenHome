@@ -9,6 +9,8 @@ import img8 from "../public/flower4.png";
 import img9 from "../public/flower5.png";
 import img10 from "../public/flower6.png";
 import img11 from "../public/flower7.png";
+import img12 from "../public/flower8.png";
+import img13 from "../public/flower9.png";
 
 export const data = [
   {
@@ -372,7 +374,7 @@ export const data = [
     family_common_name: null,
     genus_id: 6311,
     image_url:
-      "https://bs.plantnet.org/image/o/90746f2a4592ed4dbc6a166234f488654565605e",
+     img12,
     synonyms: [
       "Ranunculus tomentosus",
       "Ranunculus repens var. prostratus",
@@ -439,7 +441,7 @@ export const data = [
     family_common_name: null,
     genus_id: 3519,
     image_url:
-      "https://bs.plantnet.org/image/o/0d16977470dfdcd37d495a5b33c2f343224ebe98",
+      img13,
     synonyms: [
       "Quercus robur var. vulgaris",
       "Quercus robur subsp. eurobur",
@@ -469,7 +471,7 @@ export const data = [
     family_common_name: null,
     genus_id: 10999,
     image_url:
-      "https://bs.plantnet.org/image/o/fb1967942b880fb7c978ff76741d348a22611b88",
+      img4,
     synonyms: [
       "Festuca rubra var. hirta",
       "Festuca rubra subsp. glaucodea",
@@ -699,7 +701,7 @@ export const data = [
     family_common_name: "Olive family",
     genus_id: 10598,
     image_url:
-      "https://bs.plantnet.org/image/o/84ef20b0276c3e0a6d32dd97a7b987b510feb961",
+   img3,
     synonyms: ["Fraxinus excelsior var. communis"],
     genus: "Fraxinus",
     family: "Oleaceae",
@@ -723,7 +725,7 @@ export const data = [
     family_common_name: "Aster family",
     genus_id: 31,
     image_url:
-      "https://d2seqvvyy3b8p2.cloudfront.net/c7d6d18dfbd69cbf043001fb3204517c.jpg",
+  img2,
     synonyms: [
       "Cnicus arvensis",
       "Breea arvensis",
@@ -753,7 +755,7 @@ export const data = [
     family_common_name: null,
     genus_id: 1872,
     image_url:
-      "https://bs.plantnet.org/image/o/3bb52539dcca8b6bf19b9bf752631def901ba64c",
+     img5,
     synonyms: ["Lagopus pratensis"],
     genus: "Trifolium",
     family: "Fabaceae",
@@ -777,7 +779,7 @@ export const data = [
     family_common_name: null,
     genus_id: 11983,
     image_url:
-      "https://bs.plantnet.org/image/o/a733221df31a1ff99af03566841744f3b4c6cffe",
+img1,
     synonyms: [
       "Fagus sylvatica var. atropunicea",
       "Fagus sylvestris",
