@@ -1,5 +1,4 @@
 import React from "react";
-import ProductCard from "./ProductCard";
 import OurPostCard from "./OurPostCard";
 import { posts } from "../../data";
 

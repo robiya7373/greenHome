@@ -43,7 +43,7 @@ const HomeCarousel = () => {
                 <img
                   src={sliderImg1}
                   alt="Plant"
-                  className="h-64 h-60  object-contain md:absolute hidden md:block -left-10 bottom-10"
+                  className="h-64 object-contain md:absolute hidden md:block -left-10 bottom-10"
                 />
                 <img
                   src={sliderImg1}
@@ -78,7 +78,7 @@ const HomeCarousel = () => {
                 <img
                   src={sliderImg1}
                   alt="Plant"
-                  className="h-64 h-60  object-contain md:absolute md:block hidden  -left-10 bottom-10"
+                  className="h-64 object-contain md:absolute md:block hidden  -left-10 bottom-10"
                 />
                 <img
                   src={sliderImg1}
@@ -113,7 +113,7 @@ const HomeCarousel = () => {
                 <img
                   src={sliderImg1}
                   alt="Plant"
-                  className="h-64 h-60  object-contain md:absolute md:block hidden -left-10 bottom-10"
+                  className="h-64  object-contain md:absolute md:block hidden -left-10 bottom-10"
                 />
                 <img
                   src={sliderImg1}

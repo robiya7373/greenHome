@@ -1,5 +1,4 @@
 import React from "react";
-import { Store } from "../../../public/Svg";
 import { SlBasket } from "react-icons/sl";
 import { IoSearch } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";

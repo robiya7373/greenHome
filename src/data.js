@@ -2,6 +2,13 @@ import img1 from "../public/01.png";
 import img2 from "../public/02.png";
 import img3 from "../public/03.png";
 import img4 from "../public/04.png";
+import img5 from "../public/flower1.png";
+import img6 from "../public/flower2.png";
+import img7 from "../public/flower3.png";
+import img8 from "../public/flower4.png";
+import img9 from "../public/flower5.png";
+import img10 from "../public/flower6.png";
+import img11 from "../public/flower7.png";
 
 export const data = [
   {
@@ -17,8 +24,7 @@ export const data = [
     rank: "species",
     family_common_name: null,
     genus_id: 3519,
-    image_url:
-      "https://d2seqvvyy3b8p2.cloudfront.net/40ab8e7cdddbe3e78a581b84efa4e893.jpg",
+    image_url: img5,
     synonyms: [
       "Quercus ilex var. oleoides",
       "Quercus ilex subvar. rotundifolia",
@@ -78,8 +84,7 @@ export const data = [
     rank: "species",
     family_common_name: null,
     genus_id: 5550,
-    image_url:
-      "https://bs.plantnet.org/image/o/9db58cbb3538a6b77384f972971d51869228e545",
+    image_url: img6,
     synonyms: [
       "Urtica dioica var. vulgaris",
       "Urtica dioica var. ramosa",
@@ -106,8 +111,7 @@ export const data = [
     rank: "species",
     family_common_name: null,
     genus_id: 10915,
-    image_url:
-      "https://bs.plantnet.org/image/o/f84a7d4fc2e627ccd451f568479b1932c2b2d900",
+    image_url: img7,
     synonyms: [
       "Bromus glomeratus",
       "Koeleria dactylis",
@@ -137,8 +141,7 @@ export const data = [
     price: 19,
     family_common_name: null,
     genus_id: 6597,
-    image_url:
-      "https://bs.plantnet.org/image/o/f8d7d6fe52e36d04f5ad1fc03f46f604d5c3cc43",
+    image_url: img8,
     synonyms: [
       "Plantago intermedia",
       "Plantago lanceolata var. communis",
@@ -253,8 +256,7 @@ export const data = [
     rank: "species",
     family_common_name: "Aster family",
     genus_id: 250,
-    image_url:
-      "https://bs.plantnet.org/image/o/d788a757cd8bac8c3b1378a970c078a7a937a174",
+    image_url: img9,
     synonyms: [
       "Santolina millefolium",
       "Achillea millefolium var. nobilior",
@@ -285,8 +287,7 @@ export const data = [
     rank: "species",
     family_common_name: null,
     genus_id: 1872,
-    image_url:
-      "https://bs.plantnet.org/image/o/170ca6a6020d9e9f95f86112577aeabcb23f5b96",
+    image_url: img10,
     synonyms: ["Trifolium repens var. maculatum", "Amoria repens"],
     genus: "Trifolium",
     family: "Fabaceae",
@@ -309,8 +310,7 @@ export const data = [
     rank: "species",
     family_common_name: null,
     genus_id: 11051,
-    image_url:
-      "https://bs.plantnet.org/image/o/c0800816e2f56ed6e7702c31efd91afcdfddd68c",
+    image_url: img11,
     synonyms: [
       "Holcus lanatus var. scaber",
       "Holcus lanatus subsp. argenteus",

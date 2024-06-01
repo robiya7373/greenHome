@@ -12,7 +12,6 @@ const data = [
   { name: "Accessories", number: "9" },
 ];
 
-// House Plants
 
 const Category = () => {
   return (

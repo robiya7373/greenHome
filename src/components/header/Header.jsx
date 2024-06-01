@@ -14,16 +14,16 @@ const Header = () => {
           <img src={logo} alt="" />
         </Link>
         <div className="flex gap-[50px]  ">
-          <li className="text-[#3D3D3D] hover:font-bold border-b border-b-[3px] border-[#0000] pb-2 hover:border-[#46A358] cursor-pointer">
+          <li className="text-[#3D3D3D] hover:font-bold border-b-[3px] border-[#0000] pb-2 hover:border-[#46A358] cursor-pointer">
             <Link to={"/"}>Home</Link>
           </li>
-          <li className="text-[#3D3D3D] hover:font-bold  border-b border-b-[3px] border-[#0000] pb-2 hover:border-[#46A358] cursor-pointer">
+          <li className="text-[#3D3D3D] hover:font-bold border-b-[3px] border-[#0000] pb-2 hover:border-[#46A358] cursor-pointer">
             Shop
           </li>
-          <li className="text-[#3D3D3D] hover:font-bold  border-b border-b-[3px] border-[#0000] pb-2 hover:border-[#46A358] cursor-pointer">
+          <li className="text-[#3D3D3D] hover:font-bold  border-b-[3px] border-[#0000] pb-2 hover:border-[#46A358] cursor-pointer">
             Plant Care
           </li>
-          <li className="text-[#3D3D3D] hover:font-bold  border-b border-b-[3px] border-[#0000] pb-2 hover:border-[#46A358] cursor-pointer">
+          <li className="text-[#3D3D3D] hover:font-bold  border-b-[3px] border-[#0000] pb-2 hover:border-[#46A358] cursor-pointer">
             Blogs
           </li>
         </div>
