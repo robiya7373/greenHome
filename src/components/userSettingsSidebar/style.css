@@ -1,0 +1,100 @@
+.settSidebar {
+  max-width: 250px;
+  background: #FBFBFB;
+  width: 100%;
+}
+.settSidebar__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 15px;
+  transition: background 0.2s ease-in-out;
+  cursor: pointer;
+}
+.settSidebar__item::after {
+  content: '';
+  max-width: 5px;
+  width: 0%;
+  height: 100%;
+  background: #46A358;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: width 0.2s ease-in-out;
+}
+.settSidebar__item:hover::after {
+  width: 100%;
+}
+.settSidebar__loguot {
+  display: flex;
+  align-items: center;
+}
+.settSidebar__item:hover {
+  background: #fff;
+}
+.settSidebar__item:hover .settSidebar__item-text {
+  color: #46A358;
+}
+.settSidebar__item_active {
+  background: #fff;
+}
+.settSidebar__item_active::after {
+  content: '';
+  width: 5px;
+  height: 100%;
+  background: #46A358;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.settSidebar__title {
+  font-family: var(--font-family-ceraPro);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  color: #3D3D3D;
+  padding: 15px;
+}
+.settSidebar__list {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(70, 163, 88, 0.5);
+  padding-bottom: 10px;
+}
+.settSidebar__item-text {
+  font-family: var(--font-family-ceraPro);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 45px;
+  color: #727272;
+  margin-left: 10px;
+  transition: color 0.2s ease-in-out;
+}
+.settSidebar__loguot {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 15px;
+  cursor: pointer;
+}
+.settSidebar__loguot-text {
+  margin-left: 10px;
+  font-family: var(--font-family-ceraPro);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  color: #46A358;
+}
+.settSidebar__item-icon {
+  stroke-width: 1px;
+  stroke: #727272;
+  transition: stroke 0.2s ease-in-out;
+}
+.settSidebar__item:hover .settSidebar__item-icon {
+  stroke: #46A358;
+}
+.settSidebar__item_active .settSidebar__item-icon {
+  stroke: #46A358;
+}

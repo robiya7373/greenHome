@@ -1,0 +1,105 @@
+.products-sorting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.products-sorting__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.products-sorting__item {
+  margin-right: 40px;
+}
+.products-sorting__link {
+  font-family: var(--font-family-ceraPro);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: #3d3d3d;
+  text-decoration: none;
+  position: relative;
+}
+.products-sorting__link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #46a358;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  border-radius: 5px;
+  transition: width 0.3s ease-in-out;
+}
+.products-sorting__link:hover {
+  color: #46a358;
+}
+.products-sorting__link:hover:after {
+  width: 100%;
+}
+.products-sorting__link_active {
+  font-weight: 700;
+  color: #46a358;
+}
+.products-sorting__link_active::after {
+  width: 100%;
+}
+.products-sorting__sort-by {
+  display: flex;
+  align-items: center;
+}
+.products-sorting__sort-by-title {
+  font-family: var(--font-family-ceraPro);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: #3d3d3d;
+}
+.products-sorting__sort-by-select {
+  position: relative;
+  margin-left: 10px;
+}
+.products-sorting__sort-by-select select {
+  position: relative;
+  z-index: 2;
+  appearance: none; /*  rm strelka */
+  -webkit-appearance: none; /* remove arrow Chrome */
+  -moz-appearance: none;
+  border: none;
+  outline: none;
+  background: transparent;
+
+  font-family: var(--font-family-ceraPro);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: #3d3d3d;
+
+  width: 100%;
+}
+.products-sorting__select-arrow {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  right: 10px;
+  bottom: 0px;
+  width: 16px;
+  height: 16px;
+}
+.products-sorting__sort-by-selec::-ms-expand {
+  display: none;
+}
+.products-sorting__sort-by-option {
+    background: #fff;
+}
+#select-1 {
+  overflow: hidden;
+  width: 80%;
+}
+
+@media screen and (max-width: 750px) {
+  .products-sorting {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}

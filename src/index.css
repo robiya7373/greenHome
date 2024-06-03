@@ -1,22 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+* {margin: 0; padding: 0; box-sizing: border-box;}
 
-li {
-  list-style: none;
+@font-face {
+  font-family: "CeraPro";
+  src: url('assets/fonts/CeraPro-Light.ttf');
+  font-weight: 300;
 }
 
-.homeSlide .slick-dots {
-  bottom: 30px;
+@font-face {
+  font-family: "CeraPro";
+  src: url('assets/fonts/CeraPro-Regular.ttf');
+  font-weight: 400;
 }
-.popular .slick-dots {
-  bottom: -5px !important;
+
+@font-face {
+  font-family: "CeraPro";
+  src: url('assets/fonts/CeraPro-Medium.ttf');
+  font-weight: 500;
 }
-.slick-dots li button:before {
-  color: #46a3584d !important;
-  opacity: 1 !important;
+
+@font-face {
+  font-family: "CeraPro";
+  src: url('assets/fonts/CeraPro-Bold.ttf');
+  font-weight: 700;
 }
-li.slick-active button::before {
-  color: #46a358 !important;
-  opacity: 1 !important;
+
+@font-face {
+  font-family: "CeraPro";
+  src: url('assets/fonts/CeraPro-Black.ttf');
+  font-weight: 900;
+}
+
+/* Нужно поменять шривт Cera Pro */
+:root {
+    --font-family-ceraPro: "CeraPro";
 }

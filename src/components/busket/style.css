@@ -1,0 +1,116 @@
+.busket__header {
+  border-bottom: 1px solid rgba(70, 163, 88, 0.5);
+  padding: 10px 0;
+  display: flex;
+}
+.busket__title {
+  font-family: var(--font-family-ceraPro);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3D3D3D;
+}
+.busket__products {
+  width: 30%;
+}
+.busket__price {
+  width: 20%;
+}
+.busket__quantity {
+  width: 20%;
+}
+.busket__total {
+  width: 30%;
+}
+.busket__list {
+  list-style: none;
+}
+.busket__item {
+  display: flex;
+  align-items: center;
+  background: #FBFBFB;
+  padding: 10px;
+  margin-top: 15px;
+}
+.busket__products-inner {
+  display: flex;
+  align-items: center;
+}
+.busket__products-img {
+  mix-blend-mode: multiply;
+  width: 70px;
+}
+.busket__products-info {
+  margin: 0 10px;
+}
+.busket__product-number {
+  margin-top: 5px;
+  font-family: var(--font-family-ceraPro);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #727272;
+}
+.busket__product-num-title {
+  color: #A5A5A5;
+}
+.busket__price-text {
+  font-family: var(--font-family-ceraPro);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #727272;
+}
+.busket__quantity-inner {
+  display: flex;
+  align-items: center;
+}
+.busket__quantity-count-btn {
+  background: linear-gradient(180deg, #46A358 0%, rgba(70, 163, 88, 0.8) 100%);
+  border-radius: 29px;
+  border: none;
+  outline: none;
+  width: 21px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.busket__quantity-counter {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family-ceraPro);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 10px;
+  color: #3D3D3D;
+}
+.busket__total-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.busket__total-text {
+  font-family: var(--font-family-ceraPro);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #46A358;
+}
+.busket__delete-btn {
+  background: none;
+  border: none;
+  outline: none;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.busket__container {
+  display: flex;
+  column-gap: 80px;
+}
+.busket__interface {
+  flex: 1;
+}

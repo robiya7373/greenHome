@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Нужно поменять шривт Cera Pro */
+:root {
+    --font-family-ceraPro: "Roboto", sans-serif;
+}
+
+.productsCard {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productsCard__inner {
+    display: flex;
+    flex-direction: column;
+    max-width: 260px;
+}
+
+.productsCard__preview {
+    height: 300px;
+    width: 260px;
+    background: #FBFBFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #FBFBFB;
+    transition: border-color 0.3s ease-in-out;
+    position: relative;
+}
+
+.productsCard__preview:hover {
+    border-color: #46A358;
+}
+
+.productsCard__img {
+    mix-blend-mode: multiply;
+}
+
+.productsCard__name {
+    font-family: var(--font-family-ceraPro);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3D3D3D;
+    text-align: left;
+}
+
+.productsCard__price {
+    font-family: var(--font-family-ceraPro);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    color: #46A358;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.productsCard__link {
+    text-decoration: none;
+}
+
+.productsCard__content {
+    margin: 10px 0;
+    width: max-content;
+    align-self: flex-start;
+}
+
+.productsCard__manage {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px 0;
+    z-index: 999;
+    transition: display 0.3s ease-in-out;
+}
+
+.productsCard__manage-btn {
+    background: #fff;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.productsCard:hover .productsCard__manage {
+    display: flex;
+}
+
+.productsCard__manage-default-icon {
+    width: 20px;
+    height: 20px;
+    fill: #3D3D3D;
+    transition: fill 0.1s ease-in-out;
+}
+
+.productsCard__manage-default-icon:hover {
+    fill: #46A358;
+}
+
+.productsCard__discont {
+    position: absolute;
+    z-index: 3;
+    top: 20px;
+    left: 0;
+    background: #46A358;
+    padding: 5px;
+}
+
+.productsCard__discont-text {
+    font-family: var(--font-family-ceraPro);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.productsCard__discont-price-container {
+    display: flex;
+    align-items: center;
+}
+
+.productsCard__discont-price {
+    color: #A5A5A5;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin: 0 15px;
+}

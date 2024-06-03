@@ -1,0 +1,24 @@
+.accoutnDetail__input-container {
+  display: block;
+  width: 100%;
+}
+.accountDetail__input-title {
+  font-family: var(--font-family-ceraPro);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: #3D3D3D;
+  margin: 10px 0;
+}
+.accountDetail__important-field {
+  color: #F03800;
+  margin: 0 2px;
+}
+.accoutnDetail__input {
+  border: 1px solid #EAEAEA;
+  border-radius: 3px;
+  outline: none;
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 16px;
+}

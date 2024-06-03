@@ -1,0 +1,42 @@
+.keen-slider__slide {
+  min-width: 260px;
+  width: 100%;
+}
+.slider__dots {
+    position: absolute;
+
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__dot {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: rgba(70, 163, 88, 0.3);
+    border-radius: 50%;
+    margin: 4px;
+
+    border: none;
+    outline: none;
+}
+
+.slider__dot_active {
+    background: #46A358;
+}
+
+.productSlider__header {
+  border-bottom: 1px solid rgba(70, 163, 88, 0.5);
+  padding: 10px 0;
+}
+.productSlider__title {
+  font-family: var(--font-family-ceraPro);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: #46A358;
+}

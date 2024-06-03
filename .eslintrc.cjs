@@ -1,21 +1,45 @@
 module.exports = {
-  root: true,
-  env: { browser: true, es2020: true },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended',
-  ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
-  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  settings: { react: { version: '18.2' } },
-  plugins: ['react-refresh'],
-  rules: {
-    'react/jsx-no-target-blank': 'off',
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
+  env: {
+    browser: true,
+    es2021: true,
   },
-}
+  extends: ['plugin:react/recommended', 'airbnb'],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
+  plugins: ['react', 'prettier'],
+  rules: {
+    'prettier/prettier': [
+      'warn',
+      {
+        singleQuote: true,
+        trailingComma: 'es5',
+        semi: true,
+        tabWidth: 2,
+        endOfLine: 'auto',
+        'max-widht': 100,
+      },
+    ],
+    'no-alert': 'error',
+    'quote-props': ['error', 'as-needed'],
+    'comma-dangle': ['error', 'only-multiline'],
+    'linebreak-style': 'off',
+    'import/prefer-default-export': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'react/prop-types': 'off',
+    'react/no-array-index-key': 'off',
+    'jsx-a11y/no-noninteractive-element-interactions': 'off',
+    'jsx-a11y/label-has-associated-control': 'off',
+    'no-multi-spaces': 'off',
+    'object-curly-newline': 'off',
+    'react/jsx-one-expression-per-line': 'off',
+    'operator-linebreak': 'off',
+    'react/destructuring-assignment': 'off',
+    'no-plusplus': 'off',
+    'no-use-before-define': 'off',
+  },
+};

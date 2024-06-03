@@ -1,50 +1,141 @@
-import React from "react";
-import logo from "../../../public/logo.png";
-import store from "../../../public/store.png";
-import { IoSearch } from "react-icons/io5";
-import { RxExit } from "react-icons/rx";
-// import PopularProducts from "../popularProducts/PopularProducts";
-import { Link } from "react-router-dom";
+// Libs
+import React, {useState} from 'react';
+import { NavLink, Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 
-const Header = () => {
+// components
+
+import {AuthModal} from '../imports'
+// Styles
+import './header.css';
+
+// Icons
+import { ReactComponent as LogoIcon } from '../../assets/logo.svg';
+import { ReactComponent as SearchIcon } from '../../assets/header-icons/search.svg';
+import { ReactComponent as FilterIcon } from '../../assets/header-icons/filter.svg';
+import { ReactComponent as LogoutIcon } from '../../assets/header-icons/logout.svg';
+import { ReactComponent as BusketIcon } from '../../assets/header-icons/busket.svg';
+
+function Header() {
+
+  const [authIsOpen, setAuthIsOpen] = useState(false);
+  const [isRegister, setIsRegister] = useState(false);
+
   return (
-    <div className="lg:container mx-auto px-5 ">
-      <div className="flex justify-between items-center py-3">
-        <Link to={"/"} className="">
-          <img src={logo} alt="" />
-        </Link>
-        <div className="flex gap-[50px]  ">
-          <li className="text-[#3D3D3D] hover:font-bold border-b-[3px] border-[#0000] pb-2 hover:border-[#46A358] cursor-pointer">
-            <Link to={"/"}>Home</Link>
-          </li>
-          <li className="text-[#3D3D3D] hover:font-bold border-b-[3px] border-[#0000] pb-2 hover:border-[#46A358] cursor-pointer">
-            Shop
-          </li>
-          <li className="text-[#3D3D3D] hover:font-bold  border-b-[3px] border-[#0000] pb-2 hover:border-[#46A358] cursor-pointer">
-            Plant Care
-          </li>
-          <li className="text-[#3D3D3D] hover:font-bold  border-b-[3px] border-[#0000] pb-2 hover:border-[#46A358] cursor-pointer">
-            Blogs
-          </li>
-        </div>
-        <div className="flex  items-center gap-[30px]">
-          {/* <exit /> */}
-          <div className="">
-            <IoSearch />
-          </div>
-          <Link to={"/cart"} className="">
-            <img src={store} alt="" />
-          </Link>
-          {/* <Store /> */}
-          <button className="bg-[#46A358] text-[#fff] flex items-center py-2 px-[17px] rounded-[6px] gap-2">
-            {/* <Search /> */}
-            <RxExit />
-            Login
-          </button>
-        </div>
+    <>
+    {authIsOpen ?
+      (<AuthModal closeFunc={ () => setAuthIsOpen(false) } />)
+      :
+      null}
+    <header className="header">
+      <div className="header__logo logo">
+        <NavLink className="logo__link" to={'/'}>
+          <LogoIcon className="logo__img" />
+        </NavLink>
       </div>
-    </div>
+
+      <div className="header__menu">
+        <ul className="header__menu-list">
+          <NavLink
+              exact
+              className="header__menu-item"
+              to={"/"}
+              activeClassName="header__menu-item_active"
+          >
+              Home
+          </NavLink>
+          <NavLink
+              className="header__menu-item"
+              to={"/shops"}
+              activeClassName="header__menu-item_active"
+          >
+              Shops
+          </NavLink>
+          <NavLink
+              className="header__menu-item"
+              to={"/plantcare"}
+              activeClassName="header__menu-item_active"
+          >
+              Plant Care
+          </NavLink>
+          <NavLink
+              className="header__menu-item"
+              to={"/blog"}
+              activeClassName="header__menu-item_active"
+          >
+              Blogs
+          </NavLink>
+        </ul>
+      </div>
+
+      <div className="header__user">
+        <ul className="header__user-list">
+          {/* Search */}
+          <li className="header__user-item">
+            <button className="header__user-btn" type="button">
+              <SearchIcon
+                className="header__user-svg header__user-search-icon"
+                width="20px"
+                height="20px"
+              />
+            </button>
+          </li>
+          {/* Basket */}
+          <Link className="header__user-item" to="/basket">
+            <button className="header__user-btn" type="button">
+              <BusketIcon
+                className="header__user-svg header__user-busket-icon"
+                width="25px"
+                height="25px"
+              />
+              <div className="header__busket-point">
+                <span className="header__busket-point-text">9+</span>
+              </div>
+            </button>
+          </Link>
+          {/* Login */}
+          <li className="header__user-item">
+            <button
+              className="header__login-btn header__user-btn"
+              type="button"
+              onClick={ () => { setAuthIsOpen(true) } }
+            >
+              <LogoutIcon
+                className="header__login-btn_icon"
+                width="18px"
+                height="18px"
+              />
+              <span className="header__login-btn_text">Login</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      {/* For mobile */}
+      <div className="header__search">
+        <div className="header__search-input-container">
+          <SearchIcon
+            className="header__search-icon"
+            width="20px"
+            height="20px"
+          />
+          <input
+            className="header__search-input"
+            type="text"
+            placeholder="Find your plants"
+          />
+        </div>
+        <button className="header__search-settings-btn" type="button">
+          <FilterIcon
+            className="header__search-settings-icon"
+            width="20px"
+            height="20px"
+          />
+        </button>
+      </div>
+    </header>
+    </>
   );
-};
+}
 
 export default Header;

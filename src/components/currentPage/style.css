@@ -1,0 +1,11 @@
+.currentpage {
+  font-family: var(--font-family-ceraPro);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: #3D3D3D;
+  margin: 30px 0;
+}
+.currentpage__bold {
+  font-weight: 700;
+}

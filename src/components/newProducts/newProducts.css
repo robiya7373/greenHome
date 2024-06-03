@@ -1,0 +1,114 @@
+/* new products style */
+.newproducts__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  transition: flex 0.4s ease-in-out;
+}
+.newproducts__item {
+  display: flex;
+  align-items: center;
+
+  transition: flex 0.4s ease-in-out;
+}
+.newproducts__item:not(:first-child) {
+  margin-left: 30px;
+}
+/* info */
+.newproducts__info {
+  width: 70%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.newproducts__title {
+  font-family: var(--font-family-ceraPro);
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+.newproducts__text {
+  font-family: var(--font-family-ceraPro);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: #727272;
+  margin-top: 10px;
+}
+.newproducts__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  background: #46a358;
+  border-radius: 6px;
+
+  padding: 10px 25px;
+  margin-top: 25px;
+
+  transition: background 0.3s ease-in-out;
+}
+.newproducts__link:hover {
+    background: #136824;
+}
+.newproducts__link-text {
+  font-family: var(--font-family-ceraPro);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.newproducts__link-icon {
+    margin-left: 5px;
+}
+/* img */
+.newproducts__image-container {
+  position: relative;
+  width: 40%;
+}
+.newproducts__img {
+  width: 290px;
+  height: auto;
+  mix-blend-mode: multiply;
+  position: absolute;
+  bottom: -100px;
+  left: -20px;
+}
+
+@media screen and (max-width: 1100px) {
+    .newproducts__list {
+        flex-direction: column;
+    }
+    .newproducts__item {
+        margin-bottom: 90px;
+    }
+    .newproducts__item:not(:first-child) {
+      margin: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+  .newproducts__img {
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .newproducts__img {
+    width: 190px;
+  }
+  .newproducts__link-text {
+    font-size: 12px;
+  }
+  .newproducts__text {
+    font-size: 12px;
+  }
+}

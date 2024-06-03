@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {margin: 0; padding: 0; box-sizing: border-box;}
+/* Нужно поменять шривт Cera Pro */
+:root {
+    --font-family-ceraPro: "Roboto", sans-serif;
+}
+
+.slide2 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+    padding: 0 40px;
+}
+
+.slide2__content {}
+
+.slide2__subtitle {
+    font-family: var(--font-family-ceraPro);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #3D3D3D;
+}
+
+.slide2__title {
+    font-family: var(--font-family-ceraPro);
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: #3D3D3D;
+    margin: 5px 0;
+}
+.slide2__title_selection {
+    color: #46A358;
+}
+.slide2__description {
+    font-family: var(--font-family-ceraPro);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #727272;
+}
+
+.slide2__link {
+    font-family: var(--font-family-ceraPro);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    display: block;
+    text-decoration: none;
+
+    width: max-content;
+
+    padding: 10px 25px;
+    background: #46A358;
+    border-radius: 6px;
+
+    margin-top: 40px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+.slide2__link:hover {
+    background: #1e742f;
+}
+.slide2__img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1250px) {
+    .slide2__title {
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .slide2__title {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .slide2__img-container {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .slide2__description {
+        font-size: 12px;
+    }
+    .slide2__img-container {
+        width: 150px;
+    }
+} 
+
+@media screen and (max-width: 450px) {
+    .slide2__content {
+    }
+    .slide2__img-container {
+        position: absolute;
+        z-index: 2;
+        filter: blur(10px)
+    }
+} 

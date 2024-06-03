@@ -1,0 +1,21 @@
+.accoutnDetail {
+  width: 100%;
+}
+.accoutnDetail__form-inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+  justify-content: start;
+}
+.accountDetail__title {
+  font-family: var(--font-family-ceraPro);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3D3D3D;
+}
+.accoutnDetail__form-section:not(:first-child) {
+  margin-top: 40px;
+}
